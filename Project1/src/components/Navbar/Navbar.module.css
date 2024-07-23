@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  position: fixed;
+  width: 100%;
+  height: 5%;
+  z-index: 1000;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff; /* Adjusted for visibility on dark background */
+  order: 0;
+}
+
+.hamburger {
+  display: flex; /* Always display the hamburger icon */
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 1001;
+  order: 1;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  border-radius: 24px;
+  background-color: #fff; /* Adjusted for visibility on dark background */
+  transition: all 0.3s ease;
+}
+
+.hamburger.open .line:nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.navLinks {
+  display: none; /* Initially hide the links */
+  flex-direction: row;
+  align-items: flex-end; /* Align items to the right */
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  /* background-color: #fff; */
+  z-index: 999;
+  width: auto;
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
+  transform: translateX(100%); /* Start hidden off-screen */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navLinks.showMenu {
+  display: flex; /* Display the links when menu is open */
+  transform: translateX(0);
+}
+
+.navLinks li {
+  list-style: none;
+  opacity: 0; /* Start invisible */
+  animation: slidein 0.5s ease-in-out forwards;
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-radius: 24px;
+  text-align: center;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+  order: 1;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.navLinks a:hover {
+  color: #0070f3;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

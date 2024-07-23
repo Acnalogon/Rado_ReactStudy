@@ -1,0 +1,24 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 5dvw;
+  color: #ff3f82;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 5%;
+}
+
+.subheading {
+  display: flex;
+  justify-content: left;
+  margin-left: 5%;
+}
+
+.paragraph {
+  margin-left: 5%;
+  margin-right: 15%;
+  padding: 1%;
+}
