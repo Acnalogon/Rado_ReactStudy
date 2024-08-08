@@ -52,12 +52,13 @@ export default Home; */
 "use client"
 
 import React, { useState, useEffect, useRef } from "react";
+import styles from "./HomeStyles.module.css"
 
 const Home = () => (
-  <div className="section" id="home">
+  <div className={styles.section}>
     <h1>Rado Vidakovic</h1>
     <h2>Self-taught web developer</h2>
-    <button>Read More</button>
+    <button className={styles.btn}>Read More</button>
   </div>
 );
 
