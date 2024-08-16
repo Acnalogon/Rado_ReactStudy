@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./AboutMeStyles.module.css";
 
 const AboutMe = () => (
-  <div className={styles.section} id="about">
+  <div id="about" className={styles.section}>
     <h2 className={styles.heading}>Background & Skills</h2>
     <p className={styles.paragraph}>
       Born on November 13th, 1996, in Bosnia and Herzegovina, I bring a diverse

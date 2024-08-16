@@ -9,8 +9,9 @@
 /* Set default styles for the html and body */
 html,
 body {
-  width: 100vw;
-  height: 100vh;
-  /* overflow: hidden; */
+  /*  width: 100vw;
+  height: 100vh; */
+  overflow: auto;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }

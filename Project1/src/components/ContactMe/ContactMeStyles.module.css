@@ -8,8 +8,8 @@
 }
 
 .heading {
-  font-size: 5dvw;
-  color: #ff3f82;
+  font-size: 50pt;
+  color: #ffffff;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -23,4 +23,5 @@
 .listItem {
   margin-bottom: 1em;
   font-size: 1.2em;
+  color: #ffffff;
 }

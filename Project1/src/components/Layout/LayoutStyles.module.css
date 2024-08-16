@@ -1,25 +1,16 @@
-.horizontal-scroll {
-  display: flex;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-type: x mandatory;
-}
-
-.scroll-content {
+.scrollContainer {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
-  scroll-snap-type: x mandatory;
+  overflow-y: auto;
 }
 
 .section {
-  flex: 0 0 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
+  min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

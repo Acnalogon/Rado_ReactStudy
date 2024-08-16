@@ -14,12 +14,12 @@
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
-  color: #fff; /* Adjusted for visibility on dark background */
+  color: #fff;
   order: 0;
 }
 
 .hamburger {
-  display: flex; /* Always display the hamburger icon */
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   cursor: pointer;
@@ -32,7 +32,7 @@
   width: 25px;
   height: 3px;
   border-radius: 24px;
-  background-color: #fff; /* Adjusted for visibility on dark background */
+  background-color: #fff;
   transition: all 0.3s ease;
 }
 
@@ -51,28 +51,26 @@
 }
 
 .navLinks {
-  display: none; /* Initially hide the links */
+  display: none;
   flex-direction: row;
-  align-items: flex-end; /* Align items to the right */
+  align-items: flex-end;
   position: fixed;
   top: 60px;
   right: 20px;
-  /* background-color: #fff; */
   z-index: 999;
   width: auto;
-  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
-  transform: translateX(100%); /* Start hidden off-screen */
-  transition: transform 0.3s ease; /* Smooth transition */
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
 }
 
 .navLinks.showMenu {
-  display: flex; /* Display the links when menu is open */
+  display: flex;
   transform: translateX(0);
 }
 
 .navLinks li {
   list-style: none;
-  opacity: 0; /* Start invisible */
+  opacity: 0;
   animation: slidein 0.5s ease-in-out forwards;
   display: flex;
   padding: 10px;
@@ -91,7 +89,7 @@
 }
 
 .navLinks a:hover {
-  color: #0070f3;
+  color: #ff9a9e;
 }
 
 @keyframes slidein {
