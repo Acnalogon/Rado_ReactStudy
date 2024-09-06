@@ -1,23 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: row; /* Align elements horizontally */
+  justify-content: space-between; /* Space out elements */
+  align-items: flex-start; /* Align items to the top */
+}
+
 .section {
   display: flex;
   flex-direction: column;
+  width: 50%; /* Adjust width as needed */
 }
 
 .heading {
   font-size: 50pt;
+  font-family: "Big Shoulders Inline Text";
   color: white;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 40px;
   margin-left: 5%;
-  border-bottom: white 3px solid;
+  border-bottom: white 2.5px solid;
 }
 
 .subheading {
-  display: flex;
-  justify-content: left;
   margin-left: 5%;
   color: white;
   font-size: 30pt;
+  font-family: "Big Shoulders Inline Text";
 }
 
 .paragraph {
@@ -25,5 +33,12 @@
   margin-right: 15%;
   padding: 1%;
   color: white;
-  font-size: 16pt;
+  font-size: 14pt;
+}
+
+.chartContainer {
+  width: 50%; /* Adjust to fit your design */
+  display: flex;
+  justify-content: space-around; /* Space the charts evenly */
+  align-items: center;
 }

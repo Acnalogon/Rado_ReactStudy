@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useRef } from 'react';
 import styles from './AnimatedBackground.module.css';
 
@@ -15,7 +17,7 @@ const AnimatedBackground: React.FC = () => {
       if (backgroundRef.current) {
         backgroundRef.current.style.background = `
           radial-gradient(circle at ${xPos}% ${yPos}%, #ff9a9e, #fecfef) 
-        `; /* #fecfef  #8a2be2,*/
+        `; 
       }
     };
 
@@ -30,3 +32,5 @@ const AnimatedBackground: React.FC = () => {
 };
 
 export default AnimatedBackground;
+
+/* #fecfef  #8a2be2,*/

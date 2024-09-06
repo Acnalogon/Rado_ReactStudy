@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './NavbarStyles.module.css';
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <a href="#">Rado_Vidakovic</a>
+        <a href="#">Rado Vidakovic</a>
       </div>
       <div className={`${styles.hamburger} ${isOpen ? styles.open : ''}`} onClick={toggleMenu}>
         <div className={styles.line}></div>

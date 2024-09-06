@@ -6,8 +6,9 @@
 .heading {
   display: flex;
   justify-content: left;
+  font-family: "Big Shoulders Inline Text";
   font-size: 42pt;
-  border-bottom: #ffffff 3px solid;
+  border-bottom: #ffffff 2.5px solid;
   color: #ffffff;
   margin-bottom: 0;
   margin-top: 0;
