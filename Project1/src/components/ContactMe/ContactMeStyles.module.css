@@ -28,7 +28,7 @@
 .contactForm button {
   width: 100%;
   padding: 10px;
-  background-color: #6a0dad; /* Purple color */
+  background-color: #f98689; /* Purple color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -36,7 +36,7 @@
 }
 
 .contactForm button:hover {
-  background-color: #5a009e; /* Darker purple */
+  background-color: #f55a5f; /* Darker purple */
 }
 
 .contactForm p {

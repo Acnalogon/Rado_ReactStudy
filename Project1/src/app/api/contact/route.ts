@@ -6,17 +6,19 @@ export async function POST(request: Request) {
 
   // Create a Nodemailer transporter using SMTP
   let transporter = nodemailer.createTransport({
-    service: "gmail", // Use your email service (like Gmail, Outlook, etc.)
+    host: process.env.EMAIL_SERVER, // SMTP server (Gmail in this case)
+    port: Number(process.env.EMAIL_PORT), // Port for the SMTP
+    secure: false, // True for port 465, false for other ports
     auth: {
-      user: process.env.EMAIL_USER, // Store these in .env.local
-      pass: process.env.EMAIL_PASS,
+      user: process.env.EMAIL_USER, // Gmail address
+      pass: process.env.EMAIL_PASS, // Gmail App Password
     },
   });
 
   // Setup email data
   const mailOptions = {
-    from: email, // sender address
-    to: process.env.EMAIL_TO, // your email address
+    from: process.env.EMAIL_USER, // sender address (your Gmail)
+    to: process.env.EMAIL_TO, // receiving email (your own or someone else's)
     subject: `Message from ${name}`,
     text: message,
     html: `<p>${message}</p>`,
@@ -27,6 +29,7 @@ export async function POST(request: Request) {
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ message: "Email sent successfully!" });
   } catch (error) {
+    console.error("Failed to send email:", error);
     return NextResponse.json({ message: "Failed to send email", error });
   }
 }

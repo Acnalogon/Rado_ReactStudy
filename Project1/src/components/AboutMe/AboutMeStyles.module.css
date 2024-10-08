@@ -1,6 +1,10 @@
 .section {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  background-color: white;
+  color: #ff9a9e;
+  border-radius: 10px;
 }
 
 .heading {
@@ -8,17 +12,18 @@
   justify-content: left;
   font-family: "Big Shoulders Inline Text";
   font-size: 42pt;
-  border-bottom: #ffffff 2.5px solid;
-  color: #ffffff;
+  width: 77%;
+  border-bottom: #ff9a9e 2.5px solid;
+  /* color: #ffffff; */
   margin-bottom: 0;
   margin-top: 0;
   margin-left: 5%;
 }
 
 .paragraph {
-  margin-left: 5%;
+  margin-left: 15%;
   margin-right: 15%;
   padding: 1%;
-  font-size: 16pt;
-  color: #ffffff;
+  font-size: 14pt;
+  /* color: #ffffff; */
 }

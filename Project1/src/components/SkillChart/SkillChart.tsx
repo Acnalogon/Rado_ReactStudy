@@ -27,16 +27,16 @@ const SkillChart = () => {
             dataLabels: {
               name: {
                 show: true,
-                color: '#6a0dad',
+                color: '#f55a5f',
               },
               value: {
                 show: true,
-                color: '#6a0dad',
+                color: '#f55a5f',
               },
             },
           },
         },
-        colors: ['#6a0dad'],
+        colors: ['#f55a5f'],
         labels: ['Front-End'],
       },
     },
@@ -55,16 +55,16 @@ const SkillChart = () => {
             dataLabels: {
               name: {
                 show: true,
-                color: '#6a0dad',
+                color: '#f55a5f',
               },
               value: {
                 show: true,
-                color: '#6a0dad',
+                color: '#f55a5f',
               },
             },
           },
         },
-        colors: ['#6a0dad'],
+        colors: ['#f55a5f'],
         labels: ['Back-End'],
       },
     },
@@ -83,16 +83,16 @@ const SkillChart = () => {
             dataLabels: {
               name: {
                 show: true,
-                color: '#6a0dad',
+                color: '#f55a5f',
               },
               value: {
                 show: true,
-                color: '#6a0dad',
+                color: '#f55a5f',
               },
             },
           },
         },
-        colors: ['#6a0dad'],
+        colors: ['#f55a5f'],
         labels: ['Languages'],
       },
     },
