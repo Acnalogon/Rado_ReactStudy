@@ -6,8 +6,12 @@ export default nextConfig;
 // next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Tells Next.js to export the app as static files
-  distDir: "out", // Directory where exported files will be stored
+  output: "export",
+  distDir: "out", // Where your static files will be exported
+  assetPrefix: process.env.NODE_ENV === "production" ? "/Rado_ReactStudy/" : "", // Set asset prefix for production
+  images: {
+    unoptimized: true, // Disable Next.js image optimization since GitHub Pages does not support it
+  },
 };
 
 export default nextConfig;
